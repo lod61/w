@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  min-width: 1440px;
+}
+
+.img-container {
+  width: 1440px;
+  margin: 18px auto;
 }
 
 .App-logo {
@@ -35,4 +41,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 14px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
+  /* background: grey; */
+  margin-bottom: 15px;
+}
+
+.list-img {
+  border-radius: 13px;
+  width: 100%;
+  height: auto;
+}
+
+.app-header {
+  height: 71px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 45px;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(103, 102, 102, 0.25);
+}
+
+.ml35{
+  margin-left: 35px;
+}
+
+.app-header>img {
+  height: 24px;
 }
